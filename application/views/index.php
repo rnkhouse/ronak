@@ -124,6 +124,7 @@
                         <input name="last_name" type="text" class="input-box" placeholder="Last name">
                         
                         <span class='errorMessage'><?= isset($email)?$email['REQUIRED']:''; ?></span>
+                        <span class='errorMessage'><?= isset($user_exist)?$user_exist:''; ?></span>
                         <input name="email" type="text" class="input-box" placeholder="Email">
                         
                         <span class='errorMessage'><?= isset($password)?$password['REQUIRED']:''; ?></span>

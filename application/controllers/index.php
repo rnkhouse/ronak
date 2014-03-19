@@ -89,29 +89,14 @@ class Index extends CI_Controller {
                               'email' => array('ALIAS'=>'Email', 'REQUIRED','EMAIL'),
                               
                               'password' => array('ALIAS'=>'Password','REQUIRED'),
-                              'gender' => array('ALIAS'=>'Gender','REQUIRED'),
-                              'primary_account'=>array('ALIAS'=>'Primary Account','REQUIRED')
+                              
                               );
             
 
             $form   = new FORM($validate);
             $errors = $form->fetchAll_error();
             
-            $day   = (isset($_POST['selDay']))   ? $_POST['selDay'] 	  : '';
-            $month = (isset($_POST['selMonth'])) ? $_POST['selMonth']  : '';
-            $year  = (isset($_POST['selYear']))  ? $_POST['selYear']   : '';
             
-            if($day < 10){
-                $day = '0'.$day;
-            }
-            else{
-                $day = $day;
-            }
-            $dob = $year.'-'.$month.'-'.$day;
-            
-            if(!preg_match('/\d{4}-\d{2}-\d{2}/',$dob) || $dob == ''){
-                $errors['dob'] = "This date is not valid";
-            }
             
             // Check email in database...
             $email = isset($_POST['email'])?$_POST['email']:'';
@@ -127,8 +112,8 @@ class Index extends CI_Controller {
                 $first_name = isset($_POST['first_name'])?$_POST['first_name']:'';
                 $last_name = isset($_POST['last_name'])?$_POST['last_name']:'';
                 $password = isset($_POST['password'])?$_POST['password']:'';
-                $gender = isset($_POST['gender'])?$_POST['gender']:'';
-                $primary_account = isset($_POST['primary_account'])?$_POST['primary_account']:'';
+                $gender = 'male';
+                $primary_account = 'SOCIAL';
                 
                 if($gender == 'male' && $primary_account == 'SOCIAL'){
                     $social_avatar = 'default_male.jpg';
