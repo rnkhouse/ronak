@@ -155,6 +155,10 @@ class Index extends CI_Controller {
                     
                     redirect('/index.php/home');
                 }
+                else{
+                    echo "problem";
+                    print_r($new_user);
+                }
                 
             }
             else{
