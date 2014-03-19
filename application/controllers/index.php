@@ -165,7 +165,7 @@ class Index extends CI_Controller {
                 // include dynamic date from common:
                 $date['dynamic_date'] = $this->load->view('elements/common/dynamic_date','',TRUE);
                 $errors = array_merge($date,$errors);
-                $data = $this->load->view('index',$errors);
+                $data = $this->load->view('/index',$errors);
             }
         }
         

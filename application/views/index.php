@@ -92,7 +92,7 @@
                   <h3>Where Social media meets Career media</h3>
                <ul>
                 <li><a href="#tabs-1">Login	</a></li>
-                <li><a href="#tabs-2"> Need Account? Create  </a></li>
+                
                </ul>
                 <div id="tabs-1">
                   <div class="login-area">
@@ -109,6 +109,7 @@
                   </div>
            		  
            		</div>
+                  <!--
            		<div id="tabs-2">
                  <div class="login-area">
                    
@@ -136,6 +137,7 @@
                   </div>
            	     
                 </div>
+                  -->
              </div>
  			</div>
           </div>
