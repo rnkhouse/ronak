@@ -133,7 +133,6 @@ class Index extends CI_Controller {
                               'Email'=>$email,
                               'Password'=>md5($password),
                               'Gender'=>$gender,
-                              'BirthDate'=>'',
                               'PrimaryAccount'=>$primary_account,
                               'SocialAvatar'=>isset($social_avatar)?$social_avatar:'',
                               'CareerAvatar'=>isset($career_avatar)?$career_avatar:'',
