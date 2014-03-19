@@ -6,14 +6,8 @@ class Index extends CI_Controller {
         }
 	public function index()
 	{
-            $first_time_logged_in = $this->session->userdata('first_time');
             if($this->session->userdata('logged_in')){
-                if($first_time_logged_in){
-                    redirect('/registration');
-                }
-                else{
-                    redirect('/home');
-                }
+                redirect('/index.php/home');
             }
             else if(isset($_COOKIE['userId'])){
                 $user_id = $_COOKIE['userId'];
@@ -29,7 +23,7 @@ class Index extends CI_Controller {
                 $sess_array['CurrentAccount'] = $cookie_user['PrimaryAccount'];
                 $this->session->set_userdata('logged_in',$sess_array);
                 
-                redirect('/home');
+                redirect('/index.php/home');
             }
             else{
                 // include dynamic date from common:
@@ -65,7 +59,7 @@ class Index extends CI_Controller {
                     
                     // Set cookies:
                     setcookie('userId', $isValidUser['Id'], time()+60*60*24*30);
-                    redirect('home/');
+                    redirect('/index.php/home/');
                 }
                 else{
                     // include dynamic date from common:
