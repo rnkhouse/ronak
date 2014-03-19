@@ -96,7 +96,7 @@
                </ul>
                 <div id="tabs-1">
                   <div class="login-area">
-                    <form name='login' action='index.php/index/loginVerify' method='post'>
+                    <form name='login' action='/index.php/index/loginVerify' method='post'>
                         <span class='errorMessage'><?= isset($login_email)?$login_email['REQUIRED']:''; ?></span>
                         <input name="login_email" type="text" class="input-box" placeholder="Email">
                         
