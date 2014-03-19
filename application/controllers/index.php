@@ -82,13 +82,12 @@ class Index extends CI_Controller {
         }
         
         
-        /*
         
         public function registrationValidate(){
             $validate = array('first_name' => array('ALIAS'=>'First Name','REQUIRED'),
                               'last_name'=> array('ALIAS'=>'Last Name','REQUIRED'),
                               'email' => array('ALIAS'=>'Email', 'REQUIRED','EMAIL'),
-                              're_email' => array('ALIAS'=>'Confirm Email','COMPARE'=>'email'),
+                              
                               'password' => array('ALIAS'=>'Password','REQUIRED'),
                               'gender' => array('ALIAS'=>'Gender','REQUIRED'),
                               'primary_account'=>array('ALIAS'=>'Primary Account','REQUIRED')
@@ -169,7 +168,7 @@ class Index extends CI_Controller {
                     $this->session->set_userdata('logged_in',$sess_array);
                     $this->session->set_userdata('first_time',true);
                     
-                    redirect('/registration');
+                    redirect('/index.php/home');
                 }
                 
             }
@@ -180,7 +179,6 @@ class Index extends CI_Controller {
                 $data = $this->load->view('index',$errors);
             }
         }
-        */
         
         public function logout(){
             session_start();

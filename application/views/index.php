@@ -113,27 +113,25 @@
                  <div class="login-area">
                    
                   
-                  
-                  	<input name="first_name" type="text" class="input-box" placeholder="First name">
-                    <input name="last_name" type="text" class="input-box" placeholder="Last name">
-                    <input name="email" type="text" class="input-box" placeholder="Email">
-                    <input name="password" type="password" class="input-box" placeholder="Password">
-                    <div class="dateofbirth">
-                        <select name="selDay" class="select-date date">
-                        	<option>Day</option>
-                        </select>
-                    	<select name="selMonth" class=" select-date month">
-                        	<option>Month</option>
-                        </select>
-                        <select name="selYear" class="select-date year">
-                        	<option>Year</option>
-                        </select>
-                    </div>
-                    
-                    <div class="gender"><label class="male">Male <input name="gender" type="radio" value="male"></label> <label>Female<input name="gender" type="radio" value="female"></label></div>
-                    
                      
-                    <input name="btnSignUp" type="submit" class="submit" value="Sign Up">
+                     
+                     <form name='registration' action='/index.php/index/registrationValidate' method='post'>
+                        
+                        <span class='errorMessage'><?= isset($first_name)?$first_name['REQUIRED']:''; ?></span>
+                        <input name="first_name" type="text" class="input-box" placeholder="First name">
+                        
+                        <span class='errorMessage'><?= isset($last_name)?$last_name['REQUIRED']:''; ?></span>
+                        <input name="last_name" type="text" class="input-box" placeholder="Last name">
+                        
+                        <span class='errorMessage'><?= isset($email)?$email['REQUIRED']:''; ?></span>
+                        <input name="email" type="text" class="input-box" placeholder="Email">
+                        
+                        <span class='errorMessage'><?= isset($password)?$password['REQUIRED']:''; ?></span>
+                        <input name="password" type="password" class="input-box" placeholder="Password">
+                        
+                        
+                        <input name="btnSignUp" type="submit" class="submit" value="Sign Up">
+                    </form>
                   </div>
            	     
                 </div>
