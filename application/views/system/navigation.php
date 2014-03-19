@@ -130,7 +130,7 @@ print_r($user_info);
              
             <ul class="dropdown-menu">
             	<li class="home"><a href="#">Settings</a></li>
-                <li class="feed"><a href="/index/logout">Log Out</a></li>
+                <li class="feed"><a href="/index.php/index/logout">Log Out</a></li>
             </ul>
           </div>
             <div class="top-user-area">
