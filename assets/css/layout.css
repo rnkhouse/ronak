@@ -161,7 +161,7 @@ section{ display:block; width:100%; padding:20px 0 0; overflow:hidden; clear:bot
 .load a{ text-align:center; color:#7f8c8d; font-size:14px; font-family: 'latoregular';  text-decoration:none; display:block; padding:5px 0;}
 
 .online-firends{ }
-.online-firends h2{color:#34495e; font-size:24px; font-family: 'latoregular'; margin15px 0 12px; padding:0; }
+.online-firends h2{color:#34495e; font-size:24px; font-family: 'latoregular'; margin: 15px 12px; padding:0; }
 .online-firends ul{ margin:0; padding:0; float:left;}
 .online-firends ul li{position:relative; display:block; float:left; clear:both;}
 .onlinefriendCon{ width:100%; margin:0 auto; border-bottom:1px solid #f5f5f5; padding:10px 0; overflow:hidden;}

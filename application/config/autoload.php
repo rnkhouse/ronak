@@ -52,7 +52,7 @@ $autoload['packages'] = array();
 |	$autoload['libraries'] = array('database', 'session', 'xmlrpc');
 */
 
-$autoload['libraries'] = array('QUERY','FORM','SYSTEM','CAREER_SYSTEM','DATE','geoPlugin','FOLLOWER','EmbedVideo','COMMON','session');
+$autoload['libraries'] = array('FORM','SYSTEM','CAREER_SYSTEM','DATE','geoPlugin','FOLLOWER','EmbedVideo','COMMON','session');
 
 
 /*
